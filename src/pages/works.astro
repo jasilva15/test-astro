@@ -1,0 +1,33 @@
+---
+import Menu from "../components/Menu.astro";
+import TitlePage from "../components/TitlePage.astro";
+import CardWorks from "../components/CardWorks.astro";
+import Button from "../components/Button.astro";
+
+---
+
+<Menu />
+
+<section class="bg-gray-200 py-20 px-8">
+  <div class="max-w-6xl mx-auto">
+    <TitlePage title="Works" subtitle="The bet of my works" />
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-14">
+      <CardWorks 
+        title="Work 1" 
+        image="../images/desktop01.webp" 
+        desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum totam, ex, expedita dolor maiores eum repellendus voluptas veniam, incidunt natus blanditiis? Obcaecati est accusantium quae quisquam a veniam voluptatem."
+      >
+        <Button title="View more..." />
+      </CardWorks>
+
+      <CardWorks 
+        title="Work 2" 
+        image="../images/desktop02.jpeg" 
+        desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum totam, ex, expedita dolor maiores eum repellendus voluptas veniam, incidunt natus blanditiis? Obcaecati est accusantium quae quisquam a veniam voluptatem."
+      >
+        <Button title="View more..." />
+      </CardWorks>
+    </div>
+    
+  </div>
+</section>
